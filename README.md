@@ -1,8 +1,8 @@
 # Skyscraper-Android-Installer-Script
 An installer and updater script of [Muljord's Skyscraper](https://github.com/muldjord/skyscraper) program for Android users. Requires the use of the Termux terminal
 Useful for [Pegasus Frontend](https://github.com/mmatyas/pegasus-frontend) users on Android or other Emulation on Android users who don't want to use a PC to scrape the ROMs on their device.
-##Steps to install:
 
+## Steps to install:
 Download and Install the Termux app from its F-Droid source as the Google Play version is considered End of Life
 Termux can be found right here: [F-Droid Download](https://f-droid.org/en/packages/com.termux/)
 
