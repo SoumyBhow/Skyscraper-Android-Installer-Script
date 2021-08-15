@@ -17,7 +17,7 @@ $ mkdir -p ~/SkyscraperAndroid/ && cd ~/SkyscraperAndroid
 
 $ wget -q https://raw.githubusercontent.com/SoumyBhow/Skyscraper-Android-Installer-Script/master/termux_update_skyscraper.sh 
 
-$ chmod -x termux_update_skyscraper.sh
+$ chmod +x termux_update_skyscraper.sh
 
 $ ./termux_update_skyscraper.sh
 
