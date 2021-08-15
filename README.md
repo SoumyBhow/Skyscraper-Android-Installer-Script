@@ -10,14 +10,16 @@ Termux can be found right here: [F-Droid Download](https://f-droid.org/en/packag
 
 Open Termux and run the following commands:
 
-`$ pkg install git -y`
+```
+$ pkg install wget -y
 
-`$ git clone https://github.com/SoumyBhow/Skyscraper-Android-Installer-Script.git`
+$ cd
 
-`$ cd ~/Skyscraper-Android-Installer-Script`
+$ mkdir skysource && cd skysource
 
-`$ bash update_skyscraper_termux.sh`
+$ wget -q -O - https://raw.githubusercontent.com/muldjord/skyscraper/master/update_skyscraper.sh | bash
 
+```
 This script will download the Skyscraper source from the original repo along with other required packages needed to download and compile it. Then it will automatically move the compiled binary to Termux's usr/bin folder since the original install script is unable to.
 Please give the script at least 3-5 minutes to run.
 
@@ -25,9 +27,9 @@ You will need to use an SAF compatible File Manager of choice to access Termux's
 
 You can also update Skyscraper with this script by running it again:
 
-`$ cd ~/Skyscraper-Android-Installer-Script`
+`$ cd ~/skysource`
 
-`$ bash update_skyscraper_termux.sh`
+`$ ./termux_update_skyscraper.sh`
 
  Please see Skyscraper's [documents](https://github.com/muldjord/skyscraper/tree/master/docs) and [use instructions](https://github.com/muldjord/skyscraper#how-to-use-skyscraper) for details on how to configure it. 
  
