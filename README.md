@@ -5,6 +5,7 @@ Useful for [Pegasus Frontend](https://github.com/mmatyas/pegasus-frontend) users
 
 ## Steps to install:
 Download and Install the Termux app from its F-Droid source as the Google Play version is considered End of Life
+
 Termux can be found right here: [F-Droid Download](https://f-droid.org/en/packages/com.termux/)
 
 Open Termux and run the following commands:
