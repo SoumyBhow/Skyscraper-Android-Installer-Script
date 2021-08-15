@@ -13,9 +13,7 @@ Open Termux and run the following commands:
 ```
 $ pkg install wget -y
 
-$ cd
-
-$ mkdir skysource && cd skysource
+$ mkdir ~/skysource && cd ~/skysource
 
 $ wget -q -O - https://raw.githubusercontent.com/SoumyBhow/Skyscraper-Android-Installer-Script/master/termux_update_skyscraper.sh | bash
 
