@@ -15,7 +15,7 @@ $ pkg install wget -y
 
 $ mkdir -p ~/SkyscraperAndroid/ && cd ~/SkyscraperAndroid
 
-$ wget -q -O - https://raw.githubusercontent.com/SoumyBhow/Skyscraper-Android-Installer-Script/master/termux_update_skyscraper.sh | bash
+$ wget -q https://raw.githubusercontent.com/SoumyBhow/Skyscraper-Android-Installer-Script/master/termux_update_skyscraper.sh | bash
 
 ```
 This script will download the Skyscraper source from the original repo along with other required packages needed to download and compile it. Then it will automatically move the compiled binary to Termux's usr/bin folder since the original install script is unable to.
