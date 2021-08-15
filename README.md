@@ -13,7 +13,7 @@ Open Termux and run the following commands:
 ```
 $ pkg install wget -y
 
-$ mkdir ~/skysource && cd ~/skysource
+$ mkdir -p ~/SkyscraperAndroid/ && cd ~/SkyscraperAndroid
 
 $ wget -q -O https://raw.githubusercontent.com/SoumyBhow/Skyscraper-Android-Installer-Script/master/termux_update_skyscraper.sh | bash
 
@@ -24,11 +24,11 @@ Please give the script at least 3-5 minutes to run.
 You will need to use an SAF compatible File Manager of choice to access Termux's files (select it from the storage options). This is how you can access Skyscraper's `.skyscraper` folder and place your [config.ini](https://github.com/muldjord/skyscraper/blob/master/docs/CONFIGINI.md) and [artwork.xml](https://github.com/muldjord/skyscraper/blob/master/docs/ARTWORK.md).
 
 You can also update Skyscraper with this script by running it again:
+```
+$ cd ~/SkyscraperAndroid/
 
-`$ cd ~/skysource`
-
-`$ ./termux_update_skyscraper.sh`
-
+$ ./termux_update_skyscraper.sh
+```
  Please see Skyscraper's [documents](https://github.com/muldjord/skyscraper/tree/master/docs) and [use instructions](https://github.com/muldjord/skyscraper#how-to-use-skyscraper) for details on how to configure it. 
  
  Credits:
