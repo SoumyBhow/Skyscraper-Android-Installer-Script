@@ -6,7 +6,7 @@ echo 'Requesting Storage Permissions...'
 termux-setup-storage
 echo 'Installing required packages...'
 pkg install x11-repo -y >> /dev/null 2>&1
-pkg install git wget make clang qt5-qtbase -y >> /dev/null 2>&1
+pkg install git wget ffmpeg make clang qt5-qtbase -y >> /dev/null 2>&1
 
 echo 'Creating and moving into source folder "skysource"...'
 mkdir -p ~/SkyscraperAndroid/skysource && cd ~/SkyscraperAndroid/skysource >> /dev/null 2>&1
