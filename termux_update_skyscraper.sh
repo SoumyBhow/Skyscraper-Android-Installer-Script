@@ -1,4 +1,4 @@
-if [[ ! -f "$PREFIX/bin/Skyscraper" ]]; then
+if [[ ! -f "$PATH/Skyscraper" ]]; then
 echo 'First time setup'
 echo 'Please grant Termux storage permissions in the next screen...'
 sleep 3
