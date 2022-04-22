@@ -5,28 +5,28 @@ sleep 3
 echo 'Requesting Storage Permissions...'
 termux-setup-storage
 echo 'Installing required packages...'
-pkg install x11-repo -y >> /dev/null 2>&1
-pkg install git wget ffmpeg make clang qt5-qtbase -y >> /dev/null 2>&1
+pkg install x11-repo -y
+pkg install git wget ffmpeg build-essential qt5-qtbase -y
 
 echo 'Creating and moving into source folder "skysource"...'
-mkdir -p ~/SkyscraperAndroid/skysource && cd ~/SkyscraperAndroid/skysource >> /dev/null 2>&1
+mkdir -p ~/SkyscraperAndroid/skysource && cd ~/SkyscraperAndroid/skysource
 
 echo 'Downloading source and compiling Skyscraper'
-wget -q -O - https://raw.githubusercontent.com/muldjord/skyscraper/master/update_skyscraper.sh | bash >> /dev/null 2>&1
+wget -q -O - https://raw.githubusercontent.com/muldjord/skyscraper/master/update_skyscraper.sh | bash
 else
 cd ~/SkyscraperAndroid/skysource
 echo 'Skyscraper binary detected. Updating and compiling...'
-./update_skyscraper.sh >> /dev/null 2>&1
+./update_skyscraper.sh
 fi
 
 echo 'Manually copying the Skyscraper binary to /usr/bin...'
 
 
-cp Skyscraper $PREFIX/bin/Skyscraper
+cp Skyscraper $PATH/Skyscraper
 echo 'Making the Skyscraper binary executable...'
 
 
-chmod +x $PREFIX/bin/Skyscraper
+chmod +x $PATH/Skyscraper
 
 echo 'Done! Please run the Skyscraper command to make sure it works'
 
