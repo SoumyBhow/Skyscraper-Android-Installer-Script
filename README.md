@@ -20,7 +20,7 @@ You will need to use an SAF compatible File Manager of choice to access Termux's
 
 You can also update Skyscraper with this script by running it again:
 ```
-./termux_update_skyscraper.sh
+bash termux_update_skyscraper.sh
 ```
  Please see Skyscraper's [documents](https://github.com/muldjord/skyscraper/tree/master/docs) and [use instructions](https://github.com/muldjord/skyscraper#how-to-use-skyscraper) for details on how to configure it. 
  
