@@ -9,7 +9,10 @@ Download and Install the Termux app from its F-Droid source as the Google Play v
 Termux can be found right here: [F-Droid Download](https://f-droid.org/en/packages/com.termux/)
 
 Open Termux and run the following commands:
-
+```
+termux-storage-setup
+```
+Grant Termux storage permission when prompted.
 ```
 curl -O -L -q https://raw.githubusercontent.com/SoumyBhow/Skyscraper-Android-Installer-Script/master/termux_update_skyscraper.sh && chmod +x termux_update_skyscraper.sh && bash termux_update_skyscraper.sh
 ```
