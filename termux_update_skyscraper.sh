@@ -1,10 +1,6 @@
 #!/bin/bash
 if ! command -v Skyscraper >> /dev/null; then
 echo 'First time setup'
-echo 'Please grant Termux storage permissions in the next screen...'
-sleep 3
-echo 'Requesting Storage Permissions...'
-termux-setup-storage
 echo 'Upgrading packages...'
 pkg upgrade -y
 echo 'Installing required packages...'
