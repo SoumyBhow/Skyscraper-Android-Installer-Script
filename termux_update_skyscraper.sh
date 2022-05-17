@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ ! -f "$PATH/Skyscraper" ]]; then
+if ! command -v Skyscraper >> /dev/null; then
 echo 'First time setup'
 echo 'Please grant Termux storage permissions in the next screen...'
 sleep 3
