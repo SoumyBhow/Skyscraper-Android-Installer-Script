@@ -13,11 +13,18 @@ Open Termux and run the following commands:
 termux-storage-setup
 ```
 Grant Termux storage permission when prompted.
+
+```
+pkg upgrade -y
+```
+
+Make sure to read through the messages and upgrade packages.
+
 ```
 curl -O -L -q https://raw.githubusercontent.com/SoumyBhow/Skyscraper-Android-Installer-Script/master/termux_update_skyscraper.sh && chmod +x termux_update_skyscraper.sh && bash termux_update_skyscraper.sh
 ```
-This script will download the Skyscraper source from the original repo along with other required packages needed to download and compile it. Then it will automatically move the compiled binary to Termux's usr/bin folder since the original install script is unable to.
-Please give the script at least 3-5 minutes to run.
+This script will download the Skyscraper source from the original repo along with other required packages needed to download and compile it. Then it will automatically move the compiled binary to Termux's $PATH folder since the original install script is unable to.
+
 
 You will need to use an SAF compatible File Manager of choice to access Termux's files (select it from the storage options). This is how you can access Skyscraper's `.skyscraper` folder and place your [config.ini](https://github.com/muldjord/skyscraper/blob/master/docs/CONFIGINI.md) and [artwork.xml](https://github.com/muldjord/skyscraper/blob/master/docs/ARTWORK.md).
 

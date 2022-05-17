@@ -1,8 +1,6 @@
 #!/bin/bash
 if ! command -v Skyscraper >> /dev/null; then
 echo 'First time setup'
-echo 'Upgrading packages...'
-pkg upgrade -y
 echo 'Installing required packages...'
 pkg install x11-repo -y
 pkg install git wget ffmpeg build-essential qt5-qtbase -y
