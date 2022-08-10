@@ -9,7 +9,7 @@ echo 'Creating and moving into source folder "skysource"...'
 mkdir -p ./skysource && cd ./skysource || exit
 
 echo 'Downloading source and compiling Skyscraper'
-wget -q -O - https://raw.githubusercontent.com/muldjord/skyscraper/master/update_skyscraper.sh | bash
+wget -q -O - https://raw.githubusercontent.com/detain/skyscraper/master/update_skyscraper.sh | bash
 else
 cd ./skysource || exit
 echo 'Skyscraper binary detected. Updating and compiling...'
