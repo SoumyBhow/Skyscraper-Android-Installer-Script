@@ -10,7 +10,7 @@ Termux can be found right here: [F-Droid Download](https://f-droid.org/en/packag
 
 Open Termux and run the following commands:
 ```
-termux-storage-setup
+termux-setup-storage
 ```
 Grant Termux storage permission when prompted.
 
