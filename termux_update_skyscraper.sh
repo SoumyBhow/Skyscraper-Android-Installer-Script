@@ -1,30 +1,14 @@
 #!/bin/bash
-if ! command -v Skyscraper >> /dev/null; then
-echo 'First time setup'
-echo 'Installing required packages...'
+termux-setup-storage
+pkg upgrade -y
 pkg install x11-repo -y
-pkg install git wget ffmpeg build-essential qt5-qtbase -y
+pkg install git wget ffmpeg build-essential qt5-qtbase whiptail ninja liblz4 libuv -y
 
-echo 'Creating and moving into source folder "skysource"...'
-mkdir -p ./skysource && cd ./skysource || exit
-
-echo 'Downloading source and compiling Skyscraper'
-wget -q -O - https://raw.githubusercontent.com/muldjord/skyscraper/master/update_skyscraper.sh | bash
-else
-cd ./skysource || exit
-echo 'Skyscraper binary detected. Updating and compiling...'
-./update_skyscraper.sh
-fi
-
-echo 'Manually copying the Skyscraper binary to /usr/bin...'
-
-
-cp Skyscraper "$PATH"/Skyscraper
-echo 'Making the Skyscraper binary executable...'
-
-
-chmod +x "$PATH"/Skyscraper
-
-echo 'Done! Please run the Skyscraper command to make sure it works'
-
-read -n 1 -r -s -p $'Press any key to continue...\n'
+mkdir -p ~/SkyscraperAndroid && cd ~/SkyscraperAndroid || exit
+wget -q -O https://raw.githubusercontent.com/SoumyBhow/skyscraper/scripted/update_skyscraper.sh || bash
+cd ~/SkyscraperAndroid || exit
+wget -q -O https://github.com/SoumyBhow/CHDMAN-and-Maxcso-Android-Installer/scripted/Compressor.sh || bash
+cd ~/SkyscraperAndroid || exit
+wget https://github.com/SoumyBhow/Skyscraper-Lazy-Script/master/SkyscraperLazy.sh
+cp SkyscraperLazy.sh $PATH/Lazy && chmod +x $PATH/Lazy
+exit
