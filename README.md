@@ -35,3 +35,7 @@ bash termux_update_skyscraper.sh
  [Detain](https://github.com/detain/skyscraper) their Skyscraper fork
 
  [The Termux Team](https://github.com/termux) for Termux and its packages
+
+ [Charles Thobe & The M.A.M.E Team](https://github.com/CharlesThobe/chdman) for CHDMAN
+
+ [UnknownBrackets](https://github.com/unknownbrackets/maxcso) for Maxcso
